@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Tour</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <!-- navbar and front content -->
+    <div class="home">
+      <nav class="navbar navbar-expand-lg container">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <div class="logo1">
+              <p>Travel</p>
+            </div>
+            <svg class="logo2" xmlns="http://www.w3.org/2000/svg" width="99" height="39" viewBox="0 0 99 39"
+              fill="none">
+              <g clip-path="url(#clip0_1_400)">
+                <path
+                  d="M2.45561e-05 15.123C5.57707 23.1055 29.8414 31.0512 46.1621 30.5525C63.8031 30.0535 73.4636 26.5629 92.2712 13.7275C92.2165 15.1328 92.0508 16.2765 92.0776 17.3197C92.0583 18.5099 92.0498 19.7683 92.3016 20.9154C92.3557 21.256 93.0632 21.7721 93.4807 21.7756C93.8982 21.779 94.5002 21.1945 94.5816 20.8324C95.2821 17.3691 95.847 13.9274 96.4688 10.4067C96.6345 9.26304 96.098 8.51032 94.8916 8.35287C90.3127 7.96322 85.7231 7.50545 81.0872 7.19468C80.0381 7.15192 78.8613 7.61826 77.5058 7.83369C79.0557 10.5902 81.4416 9.86186 83.323 10.331C85.2829 10.8576 87.3243 11.022 89.8264 11.4623C84.8069 16.1707 79.4923 19.4595 73.6981 21.9166C52.4896 31.0134 31.4197 29.6132 10.6747 20.2004C7.97485 18.9535 5.43504 17.4018 2.79215 16.0759C1.99245 15.8539 1.26052 15.621 2.45561e-05 15.123Z"
+                  fill="#DF6951" />
+              </g>
+              <defs>
+                <clipPath id="clip0_1_400">
+                  <rect width="96.1304" height="23.346" fill="white"
+                    transform="matrix(0.987606 -0.156951 -0.156951 -0.987606 3.66418 38.1797)" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto ms-auto mb-2 mb-lg-0">
+              <li class="nav-item itm1">
+                <a class="nav-link abt active text-white" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link abt text-white" href="about.html">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle abt text-white" href="#" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu ">
+                  <li><a class="dropdown-item" href="#">Honeymoon Packages</a></li>
+                  <li><a class="dropdown-item" href="#">Tour Packages</a></li>
+                  <li><a class="dropdown-item" href="#">Musical Events</a></li>
+                  <!-- Button trigger modal -->
+                  <li>
+                    <div class="btn btn-light" data-bs-toggle="modal" data-bs-target="#exampleModal"><a
+                        class="dropdown-item" href="#">Build Packages</a></div>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link abt text-white" href="#">Upcoming Packages</a>
+              </li>
+            </ul>
+            <button type="button" class="btn1">Get in Touch</button>
+          </div>
+        </div>
+      </nav>
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title txt3 fs-5" id="exampleModalLabel">Build Your Own Packages</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <input type="text" class="form-control" id="destination1"
+                placeholder="Enter destination (country, region or city)">
+            </div>
+            <div class="mb-3">
+              <input type="text" class="form-control" id="destination2"
+                placeholder="Enter destination (country, region or city).">
+            </div>
+            <div class="mb-3">
+              <button type="button" style="color: #DF6951;" class="btn mt-2">+Add Destination</button>
+            </div>
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" aria-label="Text input with dropdown button"
+                placeholder="Date Range">
+              <button class="btn btn-outline-secondary dropdown-toggle" type="button"
+                data-bs-toggle="dropdown">Guest</button>
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="#">2 Adult</a></li>
+                <li><a class="dropdown-item" href="#">Others</a></li>
+              </ul>
+            </div>
+            <div class="mb-3">
+              <label style="color: #DF6951;" class="form-label">Activities Preferences (Optional)</label>
+              <div class="row">
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value1" id="checkbox1">
+                    <label class="form-check-label" for="checkbox1">
+                      Culture
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value2" id="checkbox2">
+                    <label class="form-check-label" for="checkbox2">
+                      Romantic
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value3" id="checkbox3">
+                    <label class="form-check-label" for="checkbox3">
+                      Outdoors
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value4" id="checkbox4">
+                    <label class="form-check-label" for="checkbox4">
+                      Religious
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value5" id="checkbox5">
+                    <label class="form-check-label" for="checkbox5">
+                      Relaxing
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value6" id="checkbox6">
+                    <label class="form-check-label" for="checkbox6">
+                      Hiking
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value7" id="checkbox7">
+                    <label class="form-check-label" for="checkbox7">
+                      Wildlife
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value8" id="checkbox8">
+                    <label class="form-check-label" for="checkbox8">
+                      Musical
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value7" id="checkbox7">
+                    <label class="form-check-label" for="checkbox7">
+                      Shopping
+                    </label>
+                  </div>
+                </div>
+                <div class="col">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="value7" id="checkbox7">
+                    <label class="form-check-label" for="checkbox7">
+                      Business
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn1">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-5 col-sm-12 clo1 "><br><br><br><br>
+        <svg xmlns="http://www.w3.org/2000/svg" width="70" height="16" viewBox="0 0 84 18" fill="none">
+          <path
+            d="M3 16.6711L8.96668 4.73778C9.7367 3.19773 11.9344 3.19773 12.7045 4.73778L16.8022 12.9334C17.5723 14.4734 19.77 14.4734 20.54 12.9334L24.6378 4.73778C25.4078 3.19773 27.6056 3.19773 28.3756 4.73778L32.4734 12.9334C33.2434 14.4734 35.4411 14.4734 36.2112 12.9334L40.3089 4.73778C41.079 3.19773 43.2767 3.19773 44.0467 4.73778L48.1445 12.9334C48.9145 14.4734 51.1123 14.4734 51.8823 12.9334L55.9801 4.73778C56.7501 3.19773 58.9478 3.19773 59.7179 4.73778L63.8156 12.9334C64.5857 14.4734 66.7834 14.4734 67.5534 12.9334L71.6512 4.73778C72.4212 3.19773 74.619 3.19773 75.389 4.73778L81.3557 16.6711"
+            stroke="#DF6951" stroke-width="5.22371" />
+        </svg>
+        <h1 class="txt1 ">No matter where you’re going to, we’ll take you there</h1>
+      </div>
+      <div class="row mt-1">
+        <div class="col-md-6 col-sm-12 box1">
+          <div class="container1">
+            <select class="dropdown1 text-white" id="dropdown1">
+              <option value="option1">Where to?</option>
+              <option value="option2">Option 2</option>
+              <option value="option3">Option 3</option>
+            </select>
+            <h4 class="text-white">|</h4>
+            <select class="dropdown1 text-white" id="dropdown2">
+              <option value="type1">Travel Type</option>
+              <option value="type2">Type 2</option>
+              <option value="type3">Type 3</option>
+            </select>
+            <h4 class="text-white">|</h4>
+            <select class="dropdown1 text-white" id="dropdown2">
+              <option value="type1">Duration</option>
+              <option value="type2">Type 2</option>
+              <option value="type3">Type 3</option>
+            </select>
+            <button class="btn2">Submit</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br><br><br><br><br><br>
+  </div>
+    <!-- grid travel partners -->
+    <div class="grid-container">
+      <div class="grid-item"><img src="./images/fly emiratespng.png" alt=""></div>
+      <div class="grid-item"><img src="./images/trivago.png" alt=""></div>
+      <div class="grid-item"><img src="./images/airbnb.png" alt=""></div>
+      <div class="grid-item"><img src="./images/turkish airlines.png" alt=""></div>
+      <div class="grid-item"><img src="./images/swiss.png" alt=""></div>
+    </div>
+    <!-- categories and services -->
+    <div class="category">
+      <h3 class="txt2 text-center">CATERGORY</h3>
+      <h2 class="txt3">We Offer Best Services</h2>
+      <div class="services container">
+        <div class="servic">
+          <img src="./images/tour-guide 1.png" alt="" class="mt-1">
+          <h5>Guided Tours</h5>
+          <p class="text-center">sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+        </div>
+        <div class="servic">
+          <img src="./images/travelling 1.png" alt="" class="ms-2 mt-1">
+          <h5> Best Flights Options</h5>
+          <p class="text-center">sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+        </div>
+        <div class="servic">
+          <img src="./images/hands 1.png" alt="" class="mt-1">
+          <h5>Religious Tours</h5>
+          <p class="text-center">sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+        </div>
+        <div class="servic">
+          <img src="./images/medical-team 1.png" alt="" class="mt-1">
+          <h5>Medical insurance</h5>
+          <p class="text-center">sunt qui repellat saepe quo velit aperiam id aliquam placeat.</p>
+        </div>
+      </div>
+    </div>
+    <!-- honeymoon -->
+    <div class="row row1 container">
+      <div class="col-md-7 col-sm-12">
+        <img class="ms-auto" src="./images/honeymoon.png" alt="">
+      </div>
+      <div class="col-md-5 col-sm-12">
+        <br><br><br><br><br><br>
+        <h3 class="txt5">Honeymoon Specials</h3>
+        <h2 class="txt4">Our Romantic Tropical Destinations</h2>
+        <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non
+          quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut
+          optio quibusdam!</p>
+      </div>
+    </div>
+    <!-- resort booking -->
+    <div class="row row2 mt-5 container">
+      <div class="col-md-1 col-sm-0 "></div>
+      <div class="col-md-6 col-sm-12 col1">
+        <h5 class="txt2">Fast & Easy</h5>
+        <h3 class="txt4">Get Your Favourite Resort Bookings</h3>
+        <div class="align">
+          <p><b>Choose Destination</b></p>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Urna, tortor tempus. </p>
+        </div>
+        <div class="align">
+          <p><b>Check Availability</b></p>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Urna, tortor tempus. </p>
+        </div>
+        <div class="align">
+          <p><b>Let’s Go</b></p>
+          <p>Lorem ipsum dolor sit amet, consectetur
+            adipiscing elit. Urna, tortor tempus. </p>
+        </div>
+      </div>
+      <div class="col-md-5 col-sm-12 col2">
+        <div class="rect7 mt-5">
+          <img src="./images/Rectangle 17.png" alt="" class="mt-1">
+          <h5 class="text-center">Trip to Hawaii</h5>
+          <p>14-29 June | by JR Martinax</p>
+          <p>60 people are interested</p>
+        </div>
+      </div>
+      <!-- <div class="col-md-0 col-sm-0"></div> -->
+    </div>
+    <!-- next holiday -->
+    <div class="nxtholiday">
+      <h2 class="nxttxt">Let’s make your <br> next holiday amazing</h2>
+      <img src="./images/Line-1.png" alt="not found">
+    </div>
+    <!-- promotion -->
+    <div class="row row3 container">
+      <div class="col-md-1 col-sm-0"></div>
+      <div class="col-md-6 col-sm-12">
+        <br><br><br><br><br><br>
+        <h3 class="txt5">PROMOTION</h3>
+        <h2 class="txt4">We Provide You Best Europe Sightseeing Tours</h2>
+        <p>Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium internos. Non
+          quis eius quo eligendi corrupti et fugiat nulla qui soluta recusandae in maxime quasi aut ducimus illum aut
+          optio quibusdam!</p>
+        <button type="button" class="btn1">View Packages</button>
+      </div>
+      <div class="col-md-4 col-sm-12 tower">
+        <img class="ms-auto" src="./images/image 50.png" alt="">
+      </div>
+      <div class="col-md-1 col-sm-0 btv">
+        <h5 class="trnsfm">BreathTakingViewes</h5>
+      </div>
+    </div>
+    <div class="section4 container">
+      <div class="sec sec1">
+        <div class="btnsec"><button type="button" class="btn4">$700</button></div>
+      </div>
+      <div class="sec sec2">
+        <div class="btnsec"><button type="button" class="btn4">$800</button></div>
+      </div>
+      <div class="sec sec3">
+        <div class="btnsec"><button type="button" class="btn4">$500</button></div>
+      </div>
+      <div class="sec sec4">
+        <div class="btnsec"><button type="button" class="btn4">$400</button></div>
+      </div>
+    </div>
+    <!-- divide 2 img part -->
+    <div class="grid-container">
+      <div style="background-color:white" class="grid-item"></div>
+      <div style="background-color: white;" class="grid-item"></div>
+    </div>
+    <div class="row row4">
+      <div class="col-md-6 col-sm-12 pt1">
+      </div>
+      <div class="col-md-6 col-sm-12 pt2">
+      </div>
+    </div>
+    <!-- trendy tour packages -->
+    <h3 class="txt2 text-center">TRENDY</h3>
+    <h2 class="txt3">Our Trending Tour Packages</h2>
+    <div class="trendy-p m-5 container">
+      <div class="trendy-c">
+        <div class="card" style="width: 18rem;">
+          <img src="/images/Rectangle 19298.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <i style="color:grey" class="fa-solid fa-suitcase"><span style="font-size:xx-small">&nbsp; 8 days </span><i
+                class="fa-solid fa-user"><span style="font-size:xx-small">&nbsp; 25 People going</span></i></i>
+            <h5 class="card-title">Switzerland
+              <span class="float-end">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+              </span>
+            </h5>
+            <i style="color:grey" class="fa-solid fa-location-dot"> <span style="font-size:xx-small">&nbsp; Europe
+              </span></i>
+            <h3 style="color:#DF6951;">1,000$ <span
+                style="text-decoration:line-through; color:grey; font-size:medium;">1,200$</span> </h3>
+            <p class="card-text">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod
+              eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
+              internos.</p>
+            <button type="button" class="btn1">Explore</button>
+          </div>
+        </div>
+      </div>
+      <div class="trendy-c">
+        <div class="card" style="width: 18rem;">
+          <img src="/images/Rectangle 19305 (1).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <i style="color:grey" class="fa-solid fa-suitcase"><span style="font-size:xx-small">&nbsp; 8 days </span><i
+                class="fa-solid fa-user"><span style="font-size:xx-small">&nbsp; 25 People going</span></i></i>
+            <h5 class="card-title">Amazon
+              <span class="float-end">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+              </span>
+            </h5>
+            <i style="color:grey" class="fa-solid fa-location-dot"> <span style="font-size:xx-small">&nbsp; Brazil
+              </span></i>
+            <h3 style="color:#DF6951;">1,223$ <span
+                style="text-decoration:line-through; color:grey; font-size:medium;">1,200$</span> </h3>
+            <p class="card-text">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod
+              eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
+              internos.</p>
+            <button type="button" class="btn1">Explore</button>
+          </div>
+        </div>
+      </div>
+      <div class="trendy-c">
+        <div class="card" style="width: 18rem;">
+          <img src="/images/Rectangle 19305 (2).png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <i style="color:grey" class="fa-solid fa-suitcase"><span style="font-size:xx-small">&nbsp; 8 days </span><i
+                class="fa-solid fa-user"><span style="font-size:xx-small">&nbsp; 25 People going</span></i></i>
+            <h5 class="card-title">Giza
+              <span class="float-end">
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" height="16" width="18" viewBox="0 0 576 512">
+                  <path fill="#FFD43B"
+                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                </svg>
+              </span>
+            </h5>
+            <i style="color:grey" class="fa-solid fa-location-dot"> <span style="font-size:xx-small">&nbsp; Egypt
+              </span></i>
+            <h3 style="color:#DF6951;">1,000$ <span
+                style="text-decoration:line-through; color:grey; font-size:medium;">1,200$</span> </h3>
+            <p class="card-text">Nam exercitationem commodi et ducimus quia in dolore animi sit mollitia amet id quod
+              eligendi. Et labore harum non nobis ipsum eum molestias mollitia et corporis praesentium a laudantium
+              internos.</p>
+            <button type="button" class="btn1">Explore</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- promotion -->
+    <div class="promotion">
+      <div class="promotion-c">
+        <h2 class="txt2">PROMOTION</h2>
+        <h4 class="txt3">See What Our Clients Say <br> About Us</h4>
+        <img src="/images/Ellipse 624.png" alt="">
+        <div class="rect8">
+          <p><br><br> Vel officiis dolor ea illo aut eligendi ullam non laudantium magnam et recusandae molestiae sit
+            iure unde aut voluptate quaerat. Id sunt provident quo possimus impedit vel doloremque obcaecati qui ullam
+            consectetur et ipsum omnis."</p>
+          <p><b>Christine Beckam - Designer</b></p>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" width="128" height="2" viewBox="0 0 128 2" fill="none">
+          <rect x="48.25" width="31.25" height="1.95312" rx="0.976562" fill="#DF6951" />
+          <rect x="96.5" width="31.25" height="1.95312" rx="0.976562" fill="white" />
+          <rect width="31.25" height="1.95312" rx="0.976562" fill="white" />
+        </svg>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      <div class="footer-part">
+        <div>
+          <div class="logo3">
+            <p>Travel</p>
+          </div>
+          <svg class="logo4" xmlns="http://www.w3.org/2000/svg" width="99" height="39" viewBox="0 0 99 39" fill="none">
+            <g clip-path="url(#clip0_1_400)">
+              <path
+                d="M2.45561e-05 15.123C5.57707 23.1055 29.8414 31.0512 46.1621 30.5525C63.8031 30.0535 73.4636 26.5629 92.2712 13.7275C92.2165 15.1328 92.0508 16.2765 92.0776 17.3197C92.0583 18.5099 92.0498 19.7683 92.3016 20.9154C92.3557 21.256 93.0632 21.7721 93.4807 21.7756C93.8982 21.779 94.5002 21.1945 94.5816 20.8324C95.2821 17.3691 95.847 13.9274 96.4688 10.4067C96.6345 9.26304 96.098 8.51032 94.8916 8.35287C90.3127 7.96322 85.7231 7.50545 81.0872 7.19468C80.0381 7.15192 78.8613 7.61826 77.5058 7.83369C79.0557 10.5902 81.4416 9.86186 83.323 10.331C85.2829 10.8576 87.3243 11.022 89.8264 11.4623C84.8069 16.1707 79.4923 19.4595 73.6981 21.9166C52.4896 31.0134 31.4197 29.6132 10.6747 20.2004C7.97485 18.9535 5.43504 17.4018 2.79215 16.0759C1.99245 15.8539 1.26052 15.621 2.45561e-05 15.123Z"
+                fill="#DF6951" />
+            </g>
+            <defs>
+              <clipPath id="clip0_1_400">
+                <rect width="96.1304" height="23.346" fill="white"
+                  transform="matrix(0.987606 -0.156951 -0.156951 -0.987606 3.66418 38.1797)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <h6 class="text-left">Travel helps companies manage payments easily.</h6>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+            <g clip-path="url(#clip0_0_659)">
+              <path
+                d="M19.9951 20.0008V20H20.0001V12.665C20.0001 9.07667 19.2276 6.3125 15.0326 6.3125C13.0159 6.3125 11.6626 7.41917 11.1101 8.46833H11.0517V6.6475H7.07422V20H11.2159V13.3883C11.2159 11.6475 11.5459 9.96417 13.7017 9.96417C15.8259 9.96417 15.8576 11.9508 15.8576 13.5V20.0008H19.9951Z"
+                fill="#DF6951" />
+              <path d="M0.330078 6.64844H4.47675V20.0009H0.330078V6.64844Z" fill="#DF6951" />
+              <path
+                d="M2.40167 0C1.07583 0 0 1.07583 0 2.40167C0 3.7275 1.07583 4.82583 2.40167 4.82583C3.7275 4.82583 4.80333 3.7275 4.80333 2.40167C4.8025 1.07583 3.72667 0 2.40167 0V0Z"
+                fill="#DF6951" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_659">
+                <rect width="20" height="20" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+            <g clip-path="url(#clip0_0_657)">
+              <path
+                d="M0.986816 9.25917C0.986816 12.1725 2.44015 14.7717 4.71265 16.4692V20L8.11765 18.1317C9.02598 18.3825 9.98848 18.5192 10.986 18.5192C16.5085 18.5192 20.986 14.3742 20.986 9.26C20.9868 4.14583 16.5093 0 10.9868 0C5.46432 0 0.986816 4.145 0.986816 9.25917H0.986816ZM9.93182 6.66583L12.5402 9.38167L17.446 6.66583L11.9793 12.4675L9.43348 9.7525L4.46432 12.4683L9.93182 6.66583Z"
+                fill="#DF6951" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_657">
+                <rect width="20" height="20" fill="white" transform="translate(0.986816)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+            <g clip-path="url(#clip0_0_663)">
+              <path
+                d="M18.9191 5.9275C19.7325 5.35 20.4166 4.62917 20.9741 3.79917V3.79833C20.23 4.12417 19.4383 4.34083 18.6116 4.44583C19.4616 3.93833 20.1108 3.14083 20.4158 2.18C19.6233 2.6525 18.7483 2.98583 17.8158 3.1725C17.0633 2.37083 15.9908 1.875 14.8208 1.875C12.5508 1.875 10.7233 3.7175 10.7233 5.97583C10.7233 6.30083 10.7508 6.61333 10.8183 6.91083C7.40996 6.74417 4.39329 5.11083 2.36662 2.62167C2.01329 3.23583 1.80495 3.93833 1.80495 4.69417C1.80495 6.11417 2.53579 7.3725 3.62662 8.10167C2.96745 8.08917 2.32162 7.8975 1.77412 7.59667V7.64167C1.77412 9.63417 3.19495 11.2892 5.05912 11.6708C4.72495 11.7625 4.36162 11.8058 3.98412 11.8058C3.72162 11.8058 3.45662 11.7908 3.20829 11.7358C3.73912 13.3592 5.24745 14.5533 7.03912 14.5925C5.64412 15.6833 3.87245 16.3408 1.95495 16.3408C1.61912 16.3408 1.29662 16.3258 0.974121 16.285C2.79079 17.4558 4.94245 18.125 7.26412 18.125C14.5 18.125 19.2158 12.0883 18.9191 5.9275Z"
+                fill="#DF6951" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_663">
+                <rect width="20" height="20" fill="white" transform="translate(0.974121)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" width="21" height="20" viewBox="0 0 21 20" fill="none">
+            <g clip-path="url(#clip0_0_665)">
+              <path
+                d="M9.39178 14.0984C9.44512 14.0534 9.49928 14.0067 9.54928 13.9576C6.76512 16.6892 2.22512 15.4142 1.16095 11.5617V11.5559C-0.266549 6.31422 5.75262 2.33256 9.54762 5.99922C9.62678 6.08339 14.8693 11.6742 14.536 11.3184H14.551C15.3335 12.1251 16.4651 12.0367 17.1385 11.3317C17.8626 10.5751 17.8885 9.34006 17.1776 8.57089C16.0551 7.27839 13.851 8.24422 14.0618 10.1601L12.8001 8.87506L11.3368 7.47589C11.6385 6.87672 12.0343 6.35256 12.5301 5.89922C12.4768 5.94506 12.4226 5.99256 12.3726 6.04006C15.1676 3.29839 19.7043 4.60339 20.761 8.43922V8.44422C22.1918 13.6851 16.166 17.6667 12.3743 14.0001C12.2968 13.9167 7.05762 8.29089 7.38928 8.64756L7.38595 8.63506C7.37262 8.63506 7.37262 8.62256 7.37262 8.62256C6.55095 7.77506 5.43678 7.90256 4.78512 8.59672C4.06012 9.35339 4.03512 10.5884 4.74762 11.3459C5.82095 12.6084 8.07262 11.6726 7.86095 9.71839C7.94262 9.80256 10.7685 12.7034 10.5885 12.5192C10.131 13.4317 9.61928 13.8509 9.39178 14.0984Z"
+                fill="#DF6951" />
+            </g>
+            <defs>
+              <clipPath id="clip0_0_665">
+                <rect width="20" height="20" fill="white" transform="translate(0.960938)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+        <div>
+          <h5><b>Company</b></h5>
+          <p>About Us</p>
+          <p>Careers</p>
+          <p>Blog</p>
+          <p>Pricing</p>
+        </div>
+        <div>
+          <h5><b>Destination</b></h5>
+          <p>Maldives</p>
+          <p>Los Angelas</p>
+          <p>Las Vegas</p>
+          <p>Torronto</p>
+        </div>
+        <div>
+          <h5><b>Join Our Newsletter</b></h5>
+
+          <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Your email address" aria-label="Recipient's username"
+              aria-describedby="button-addon2">
+            <button class="btn" style="background-color:#DF6951; border-radius:10px; color:white" type="button"
+              id="button-addon2">Subscribe</button>
+          </div>
+          <p style="color: grey; font-size:smaller;">* Will send you weekly updates for your better
+            tour packages.</p>
+        </div>
+      </div>
+      <hr>
+      <h6 class="text-center"><i class="fa-solid fa-copyright"></i> Copyright. All Rights Reserved.</h6>
+    </footer>
+
+  </body>
+
+</html>
